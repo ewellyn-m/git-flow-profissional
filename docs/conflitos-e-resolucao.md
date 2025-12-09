@@ -5,10 +5,10 @@ Este arquivo demonstra como gerar e resolver conflitos no Git.
 ---
 
 ## 1. Como criar um conflito
-
+````
 1. Certifique-se de estar na branch `main`:
 
-```bash
+bash
 git checkout main
 Abra o arquivo index.html e altere uma linha qualquer (ex.: título da página).
 
@@ -40,8 +40,9 @@ Copiar código
 git checkout main
 git merge feature/adicionar-menu
 Você verá um conflito no arquivo index.html.
-
-2. Como resolver o conflito
+````
+## 2. Como resolver o conflito
+```
 Abra o arquivo com conflito no VSCode ou outro editor. Você verá algo assim:
 
 html
@@ -61,8 +62,11 @@ bash
 Copiar código
 git add index.html
 git commit -m "resolvido conflito no index.html"
+````
 3. Como testar o merge
+```
 Após resolver o conflito, rode o projeto localmente para verificar se está funcionando corretamente:
+
 
 bash
 Copiar código
@@ -73,8 +77,9 @@ open index.html
 Verifique se todas as alterações desejadas estão presentes e funcionando.
 
 ✅ Merge feito com sucesso! Nenhum recurso foi quebrado.
-
+```
 4. Boas práticas durante conflitos
+```
 Faça commits frequentes e semânticos (feat:, fix:, docs:)
 
 Mantenha branches curtas e específicas
@@ -82,3 +87,4 @@ Mantenha branches curtas e específicas
 Teste sempre o merge localmente antes de subir para o GitHub
 
 Documente o processo.
+```
